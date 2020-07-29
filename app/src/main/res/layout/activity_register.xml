@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/whatsapp_register_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/register"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WhatsApp Join Now"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                />
+            <EditText
+                android:id="@+id/whatsapp_register_email_phn_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/whatsapp_register_image"
+                android:background="@drawable/input"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="Enter Email..."
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/email"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+            <EditText
+                android:id="@+id/whatsapp_register_pass_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/whatsapp_register_email_phn_Edt"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/input"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:hint="Enter Password...."
+                android:drawableStart="@drawable/password"
+                android:textColorHint="@color/colorPrimaryDark">
+            </EditText>
+
+            <Button
+                android:id="@+id/register_email_BtnId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register Now"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/whatsapp_register_pass_Edt"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/register_already_Id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/register_email_BtnId"
+                android:text="Already have an account?"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20dp"
+                android:clickable="true"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

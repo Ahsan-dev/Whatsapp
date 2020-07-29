@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/colorPrimary"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_profile_imageId"
+        android:layout_alignParentStart="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/profile_image"
+        />
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:id="@+id/chat_toolbar_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/chat_profile_imageId"
+        >
+
+        <TextView
+            android:id="@+id/chat_toolbar_userNameTxtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/chat_toolbar_userStatusTxtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Seen"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
